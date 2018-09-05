@@ -40,7 +40,7 @@ class DList {
               tmp -> prev = nullptr;
               head=tail=tmp;
             }
-            else{ //apuntar data next a nullptr?
+            else{
               head -> prev = tmp;
               tmp -> next = head;
               tmp -> prev = nullptr;
@@ -63,7 +63,7 @@ class DList {
             }
         }
 
-        void pop_front() { //puede estar mal pq lo primero que hago es mover a head
+        void pop_front() {
             if(!head){
               throw "Empty List";
             }
