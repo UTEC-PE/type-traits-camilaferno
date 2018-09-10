@@ -104,7 +104,7 @@ class DList {
         }
 
         iterator end() {;
-          return iterator(tail);
+          return iterator(nullptr);
         }
 
         ~DList() {
