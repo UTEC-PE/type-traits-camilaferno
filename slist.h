@@ -48,7 +48,7 @@ class SList {
 // 2. insertar al comienzo
 // 3. insertar al medio
 // 4. insertar al final
-        bool insert(T data) {
+        bool insert(T data) { // Esta lógica tiene muchas repeticiones, se puede mejorar
           Node<T>* tmp = new Node<T>(data);
           if(!head){ //1.
             head=tmp;
